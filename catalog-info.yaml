@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-service
+  description: The place to be, for great artists
+  labels:
+    example.com/custom: custom_label_value
+  annotations:
+    example.com/service-discovery: testservice
+    circleci.com/test-service: github.com/javiromerosanuk/test3
+  tags:
+    - java
+  links:
+    - url: https://test-service.santander.com
+      title: Test service
+      icon: dashboard
+      type: service
+spec:
+  type: service
+  lifecycle: production
+  owner: innovation-team
+  system: public-services
